@@ -1,0 +1,95 @@
+:root {
+    /* Example of defining CSS variables - adjust the actual colors as needed */
+    --primary-color: #333; /* Replace with your primary color */
+    --secondary-color2: #f0f0f0; /* Replace with your secondary color */
+    --secondary-color7: #ff0000; /* Replace with your star rating color */
+}
+
+#CoursesTitle {
+    background-color: var(--secondary-color2);
+    color: var(--primary-color);
+    padding: 0.1em 1em;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--secondary-color2);
+    justify-content: space-between;
+    align-items: baseline;
+    overflow: auto;
+    background-clip: padding-box;
+  
+}
+
+.image-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+.text-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font: 0.7em sans-serif;
+    line-height: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.block:hover .hover-description {
+    opacity: 1;
+}
+
+.tutor-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+    height: 5em;
+    border-radius: 30%;
+    vertical-align: middle;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: auto;
+    flex-basis: 30%; /* Adjust as needed for layout */
+    margin: 1em;
+    border: 0.1em solid black;
+	
+}
+
+.star-rating {
+    color: var(--secondary-color7);
+}
+
+
+
+
